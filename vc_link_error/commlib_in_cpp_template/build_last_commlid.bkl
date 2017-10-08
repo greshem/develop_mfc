@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!-- $Id: bakefile_quickstart.txt,v 1.5 2006/02/11 18:41:11 KO Exp $ -->
+<makefile>
+	<exe id="test22"> 
+	<app-type>gui</app-type>
+	<!-- <include>D:\usr\include\lmyunit</include> -->
+
+	<cxxflags>/DNOPCH</cxxflags>   
+	<cxxflags>/DWIN32</cxxflags>
+	<cxxflags>/DWINDOWSCODE</cxxflags>
+	<cxxflags>/D_DEBUG</cxxflags>			
+	<cxxflags>/D_MBCS</cxxflags>
+	<cxxflags>/D_WINDOWS</cxxflags>
+
+	<cxxflags>/MTd</cxxflags>
+	<cxxflags>/ZI</cxxflags>
+	
+	
+	<lib-path>D:\usr\lib</lib-path>
+	<include>D:\usr\include</include>
+
+	<ldflags>/INCREMENTAL:NO</ldflags>
+	<ldflags>/NOLOGO</ldflags>
+	<ldflags>/verbose:lib</ldflags>
+	<!-- <ldflags>/NODEFAULTLIB:nafxcwd.lib</ldflags> -->
+	<!-- <ldflags>/NODEFAULTLIB:LIBCMTD.lib</ldflags> -->
+	<!--
+	<ldflags>/NODEFAULTLIB:msvcrtd.lib</ldflags>
+	-->
+
+	<ldflags>/DEBUG</ldflags>
+	<ldflags>/SUBSYSTEM:console</ldflags>
+	<ldflags>/MACHINE:X86</ldflags>
+	<sys-lib>nafxcwd</sys-lib>
+	<sys-lib>libcmtd</sys-lib>
+	<!-- <sys-lib>UnitCode</sys-lib> --> 
+	<!--
+	<sys-lib>msvcrtd</sys-lib> 
+	-->
+
+	<sys-lib>winmm</sys-lib>
+	<!-- <sys-lib>atlsd</sys-lib> -->
+	<sys-lib>comctl32</sys-lib>
+	<sys-lib>rpcrt4</sys-lib>
+	<sys-lib>wsock32</sys-lib>
+	<sys-lib>odbc32</sys-lib>
+	<sys-lib>kernel32</sys-lib>
+	<sys-lib>user32</sys-lib>
+	<sys-lib>gdi32</sys-lib>
+	<sys-lib>winspool</sys-lib>
+	<sys-lib>comdlg32</sys-lib>
+	<sys-lib>advapi32</sys-lib>
+	<sys-lib>shell32</sys-lib>
+	<sys-lib>ole32</sys-lib>
+	<sys-lib>oleaut32</sys-lib>
+	<sys-lib>uuid</sys-lib>
+	<sys-lib>odbccp32</sys-lib>
+	<sys-lib>commlib</sys-lib> 
+	<!-- <sys-lib>mfc80d</sys-lib>  -->
+
+	
+	<sources>$(fileList('*.cpp'))</sources> 
+	<clean-files> *.ncb *.plg *.opt *.positions UpgradeLog.XML MakeFile.aps *.suo *.aps *.suo.old *.sln.old *.7.10.old *.ilk *.clw *.obj *.res *.pch *.pdb *.scc *.sbr *idb
+	</clean-files>
+     </exe>
+</makefile>
+
+

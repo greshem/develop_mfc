@@ -1,0 +1,8 @@
+
+#2011_09_30   星期五   add by huanghaibo
+1.在控制终端运行命令c:\bin\gen_win32_dll_project.pl 1(目录名)
+2.在终端运行for_each_dir.pl "bakefile -f msvc  build.bkl"   
+	for_each_dir.pl "nmake /f makefile.vc"
+3.新建test目录，将1.dll拷贝到test
+4.test终端运行bash=>for each in $(seq 1000 3000); do cp 1.dll ${each}.dll; done
+5.运行test目录下的test.exe程序

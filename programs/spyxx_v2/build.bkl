@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!-- $Id: bakefile_quickstart.txt,v 1.5 2006/02/11 18:41:11 KO Exp $ -->
+<makefile>
+	<exe id = "SpyXX">
+
+
+	<win32-res> .\SpyXX.rc </win32-res>
+
+	<cxxflags> /nologo </cxxflags>
+	<cxxflags> /MDd </cxxflags>
+	<cxxflags> /W3 </cxxflags>
+	<cxxflags> /Gm </cxxflags>
+	<cxxflags> /GX </cxxflags>
+	<cxxflags> /ZI </cxxflags>
+	<cxxflags> /Od </cxxflags>
+	<cxxflags> /D "WIN32" </cxxflags>
+	<cxxflags> /D "_DEBUG" </cxxflags>
+	<cxxflags> /D "_WINDOWS" </cxxflags>
+	<cxxflags> /D "_AFXDLL" </cxxflags>
+	<cxxflags> /Yu"stdafx.h" </cxxflags>
+	<cxxflags> /FD </cxxflags>
+	<cxxflags> /GZ </cxxflags>
+	<cxxflags> /c </cxxflags>
+	<cxxflags> /nologo </cxxflags>
+	<cxxflags> /MDd </cxxflags>
+	<cxxflags> /W3 </cxxflags>
+	<cxxflags> /Gm </cxxflags>
+	<cxxflags> /GX </cxxflags>
+	<cxxflags> /ZI </cxxflags>
+	<cxxflags> /Od </cxxflags>
+	<cxxflags> /D "WIN32" </cxxflags>
+	<cxxflags> /D "_DEBUG" </cxxflags>
+	<cxxflags> /D "_WINDOWS" </cxxflags>
+	<cxxflags> /D "_AFXDLL" </cxxflags>
+	<cxxflags> /D "_MBCS" </cxxflags>
+	<cxxflags> /FR </cxxflags>
+	<cxxflags> /Yu"stdafx.h" </cxxflags>
+	<cxxflags> /FD </cxxflags>
+	<cxxflags> /GZ </cxxflags>
+	<cxxflags> /c </cxxflags>
+	<cxxflags> /Yc"stdafx.h" </cxxflags>
+
+	<ldflags> /nologo </ldflags>
+	<ldflags> /subsystem:windows </ldflags>
+	<ldflags> /debug </ldflags>
+	<ldflags> /machine:I386 </ldflags>
+	<ldflags> /pdbtype:sept </ldflags>
+
+	<sources>$(fileList('*.cpp'))</sources>
+	<clean-files> *.ncb *.plg *.opt *.positions UpgradeLog.XML MakeFile.aps *.suo *.aps *.suo.old *.sln.old *.7.10.old *.ilk *.clw *.obj *.res *.pch *.pdb     *.scc *.sbr *idb </clean-files>
+	</exe>
+</makefile>
+

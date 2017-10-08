@@ -1,0 +1,11 @@
+
+#2011_10_13   星期四   add by huanghaibo
+
+CDImage_GUI_r167_vc2005.exe
+1. 带出的dll  是vc2003 的, 程序使用vc2005 编译的,  程序可能会不能运行.
+
+CDImage_GUI_r168_vc2003.exe
+1. 该程序采用vc2003编译
+
+CDImage_GUI_r176_vc2003.exe
+1.工程添加了版本说明文件，同时添加到ISS中

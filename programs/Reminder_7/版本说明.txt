@@ -1,0 +1,12 @@
+
+#2011_10_13   星期四   add by huanghaibo
+Reminder_7_r148.exe
+1. 程序启动的时候报内存越界访问错误，原因系strcpy()拷贝数组越界
+
+Reminder_7_r166.exe
+1. strcpy改为strncpy(),更安全
+
+Reminder_7_r178.exe
+1.工程添加了版本说明文件，同时添加到ISS中 
+
+

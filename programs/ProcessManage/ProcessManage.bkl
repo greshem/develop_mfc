@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!-- $Id: bakefile_quickstart.txt,v 1.5 2006/02/11 18:41:11 KO Exp $ -->
+<makefile>
+	<exe id = "processManger_dsp">
+
+
+
+	<cxxflags>/DWIN32</cxxflags>
+	<cxxflags>/D_DEBUG</cxxflags>			
+	<cxxflags>/D_WINDOWS</cxxflags>
+	<cxxflags>/DNOPCH</cxxflags>   
+	<sys-lib>winmm</sys-lib>
+	<sys-lib>comctl32</sys-lib>
+	<sys-lib>rpcrt4</sys-lib>
+	<sys-lib>wsock32</sys-lib>
+	<sys-lib>odbc32</sys-lib>
+	<sys-lib>kernel32</sys-lib>
+	<sys-lib>user32</sys-lib>
+	<sys-lib>gdi32</sys-lib>
+	<sys-lib>winspool</sys-lib>
+	<sys-lib>comdlg32</sys-lib>
+	<sys-lib>advapi32</sys-lib>
+	<sys-lib>shell32</sys-lib>
+	<sys-lib>ole32</sys-lib>
+	<sys-lib>oleaut32</sys-lib>
+	<sys-lib>uuid</sys-lib>
+	<sys-lib>odbccp32</sys-lib>
+	<win32-res> _work_and_todo.rc</win32-res>
+	<sources>$(fileList('*.cpp'))</sources> 
+     </exe>
+</makefile>
+

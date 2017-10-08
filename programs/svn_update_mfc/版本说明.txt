@@ -1,0 +1,9 @@
+
+#2011_10_13   星期四   add by huanghaibo
+
+svn_update_r178.exe
+1. svn_update.exe为守护进程程序，自动svn update更新目录.
+2. 所更新的目录写死在glob.cpp exec_svn_update()函数中.
+
+svn_update_r179.exe
+1.工程添加了版本说明文件，同时添加到ISS中

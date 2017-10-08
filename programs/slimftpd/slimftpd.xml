@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="Windows-1252" standalone="yes" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>1.15</MASTER_PAD_VERSION>
+		<MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>WhitSoft Development</Company_Name>
+		<Address_1 />
+		<Address_2 />
+		<City_Town />
+		<State_Province />
+		<Zip_Postal_Code />
+		<Country>USA</Country>
+		<Company_WebSite_URL>http://www.whitsoftdev.com/</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name>Matt</Author_First_Name>
+			<Author_Last_Name>Whitlock</Author_Last_Name>
+			<Author_Email>mwhitlock AT whitsoftdev DOT com</Author_Email>
+			<Contact_First_Name>Matt</Contact_First_Name>
+			<Contact_Last_Name>Whitlock</Contact_Last_Name>
+			<Contact_Email>mwhitlock AT whitsoftdev DOT com</Contact_Email>
+		</Contact_Info>
+		<Support_Info>
+			<Sales_Email>mwhitlock AT whitsoftdev DOT com</Sales_Email>
+			<Support_Email>mwhitlock AT whitsoftdev DOT com</Support_Email>
+			<General_Email>mwhitlock AT whitsoftdev DOT com</General_Email>
+			<Sales_Phone />
+			<Support_Phone />
+			<General_Phone />
+			<Fax_Phone />
+		</Support_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>SlimFTPd</Program_Name>
+		<Program_Version>3.181</Program_Version>
+		<Program_Release_Month>10</Program_Release_Month>
+		<Program_Release_Day>20</Program_Release_Day>
+		<Program_Release_Year>2006</Program_Release_Year>
+		<Program_Cost_Dollars />
+		<Program_Cost_Other_Code />
+		<Program_Cost_Other />
+		<Program_Type>Freeware</Program_Type>
+		<Program_Release_Status>Minor Update</Program_Release_Status>
+		<Program_Install_Support>No Install Support</Program_Install_Support>
+		<Program_OS_Support>Win98,WinME,WinNT 4.x,WinXP,Windows2000</Program_OS_Support>
+		<Program_Language>English</Program_Language>
+		<File_Info>
+			<Filename_Versioned>sftpd31.zip</Filename_Versioned>
+			<Filename_Previous>sftpd30.zip</Filename_Previous>
+			<Filename_Generic>sftpd.zip</Filename_Generic>
+			<Filename_Long>slimftpd.zip</Filename_Long>
+			<File_Size_Bytes />
+			<File_Size_K />
+			<File_Size_MB />
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>N</Has_Expire_Info>
+			<Expire_Count />
+			<Expire_Based_On>Days</Expire_Based_On>
+			<Expire_Other_Info />
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+		<Program_Change_Info>Fixed a log formatting bug.</Program_Change_Info>
+		<Program_Specific_Category>Internet</Program_Specific_Category>
+		<Program_Categories>FTP</Program_Categories>
+		<Program_System_Requirements />
+		<Includes_JAVA_VM>N</Includes_JAVA_VM>
+		<Includes_VB_Runtime>N</Includes_VB_Runtime>
+		<Includes_DirectX>N</Includes_DirectX>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Keywords>FTP, server, daemon, demon, port, file, share, sharing, protocol, transfer, passive, resume, connection</Keywords>
+			<Char_Desc_45>FTP server with advanced virtual file system.</Char_Desc_45>
+			<Char_Desc_80>Standards-compliant FTP server with an advanced virtual file system.</Char_Desc_80>
+			<Char_Desc_250>SlimFTPd is a fully multi-threaded standards-compliant FTP server that runs as a system service on Windows 98/ME or Windows NT/2K/XP. Its virtual file system allows you to mount any local path to any virtual path on the server&apos;s file system.</Char_Desc_250>
+			<Char_Desc_450>SlimFTPd is a fully multi-threaded standards-compliant FTP server that runs as a system service on Windows 98/ME or Windows NT/2K/XP. Once started, SlimFTPd runs quietly in the background. It reads its configuration from a config file in the same folder as the executable, and it outputs all activity to a log file in the same place. Its virtual file system allows you to mount any local drive or path to any virtual path on the server.</Char_Desc_450>
+			<Char_Desc_2000>SlimFTPd is a fully standards-compliant FTP server implementation with an advanced virtual file system. It is extremely small, but don&apos;t let its file size deceive you: SlimFTPd packs a lot of bang for the kilobyte. It is written in pure Win32 C++ with no external dependencies and no messy installer. SlimFTPd is a fully multi-threaded application that runs as a system service on Windows 98/ME or Windows NT/2K/XP, and it comes with a tool to simplify its installation or uninstallation as a system service. Once the service is started, SlimFTPd runs quietly in the background. It reads its configuration from a config file in the same folder as the executable, and it outputs all activity to a log file in the same place. The virtual file system allows you to mount any local drive or path to any virtual path on the server. This allows you to have multiple local drives represented on the server&apos;s virtual file system or just different folders from the same drive. SlimFTPd allows you to set individual permissions for server paths. Open slimftpd.conf in your favorite text editor to set up SlimFTPd&apos;s configuration. The format of SlimFTPd&apos;s config file is similar to Apache Web Server&apos;s for those familiar with Apache. Supports passive mode transfers and allows resume of failed transfers. Small memory footprint; won&apos;t hog system resources. Easy configuration of server options through configuration file. All activity logged to file. Support for binding to a specific interface in multihomed environments. User definable timeouts. No installation routine; won&apos;t take over your system. Executable is tiny! Supports all standard FTP commands: ABOR, APPE, CDUP/XCUP, CWD/XCWD, DELE, HELP, LIST, MKD/XMKD, NOOP, PASS, PASV, PORT, PWD/XPWD, QUIT, REIN, RETR, RMD/XRMD, RNFR/RNTO, STAT, STOR, SYST, TYPE, USER. Supports these extended FTP commands: MDTM, NLST, REST, SIZE. Supports setting of file timestamps. Conforms to RFC 959 and RFC 1123 standards.</Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>http://www.whitsoftdev.com/slimftpd/</Application_Info_URL>
+			<Application_Order_URL>http://www.whitsoftdev.com/slimftpd/</Application_Order_URL>
+			<Application_Screenshot_URL />
+			<Application_Icon_URL />
+			<Application_XML_File_URL>http://www.whitsoftdev.com/files/slimftpd.xml</Application_XML_File_URL>
+		</Application_URLs>
+		<Download_URLs>
+			<Primary_Download_URL>http://www.whitsoftdev.com/files/slimftpd.zip</Primary_Download_URL>
+			<Secondary_Download_URL />
+			<Additional_Download_URL_1 />
+			<Additional_Download_URL_2 />
+		</Download_URLs>
+	</Web_Info>
+	<Permissions>
+		<Distribution_Permissions />
+		<EULA />
+	</Permissions>
+</XML_DIZ_INFO>

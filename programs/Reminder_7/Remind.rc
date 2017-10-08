@@ -1,0 +1,695 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Remind.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Remind.ico"
+IDR_REMINDTYPE          ICON    DISCARDABLE     "res\\RemindDoc.ico"
+IDI_MAINFRAME           ICON    DISCARDABLE     "res\\Bald Eagle.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_OK                  BITMAP  DISCARDABLE     "res\\OK.BMP"
+IDB_CANCEL              BITMAP  DISCARDABLE     "res\\CANCEL.BMP"
+IDB_CANCEL1             BITMAP  DISCARDABLE     "res\\cancel1.bmp"
+IDB_OK1                 BITMAP  DISCARDABLE     "res\\ok1.bmp"
+IDB_SHUTNOW             BITMAP  DISCARDABLE     "res\\shutnow.BMP"
+IDB_REFRESH             BITMAP  DISCARDABLE     "res\\refresh.bmp"
+IDB_REFRESH1            BITMAP  DISCARDABLE     "res\\refresh1.bmp"
+IDB_SHUTNOW1            BITMAP  DISCARDABLE     "res\\shutnow1.BMP"
+IDB_CLOSE               BITMAP  DISCARDABLE     "res\\Close.BMP"
+IDB_CLOSE1              BITMAP  DISCARDABLE     "res\\Close1.BMP"
+IDB_KILLPROC            BITMAP  DISCARDABLE     "res\\killproc.bmp"
+IDB_KILLPROC1           BITMAP  DISCARDABLE     "res\\killproc1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_NEW
+    BUTTON      ID_EDIT_MOD
+    BUTTON      ID_EDIT_DEL
+    SEPARATOR
+    BUTTON      ID_TOOL_MANPROC
+    BUTTON      ID_TOOL_MAILCHECK
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "退出(&X)\tCtrl+F4",           ID_APP_TERMINATE
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "增加(&N)\tCtrl+N",            ID_EDIT_NEW
+        MENUITEM "修改(&M)\tCtrl+M",            ID_EDIT_MOD
+        MENUITEM "删除(&D)\tCtrl+D",            ID_EDIT_DEL
+    END
+    POPUP "选项(&O)"
+    BEGIN
+        MENUITEM "自动运行(&R)",                ID_OPTION_AUTORUN
+        MENUITEM SEPARATOR
+        MENUITEM "蜂鸣提醒(&B)",                ID_OPTION_BEEP
+        MENUITEM "置于顶端(&T)",                ID_OPTION_ONTOP
+        MENUITEM SEPARATOR
+        MENUITEM "选择背景(&P)",                ID_OPTION_GETPIC
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "进程管理(&P)",                ID_TOOL_MANPROC
+        MENUITEM "邮件检查(&M)",                ID_TOOL_MAILCHECK
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于(&A)...",                 ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "每日提醒(&R)",                ID_APP_APP
+        MENUITEM "进程管理(&P)",                ID_TOOL_MANPROC
+        MENUITEM "邮件检查(&M)",                ID_TOOL_MAILCHECK
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_TERMINATE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_EDIT_DEL,            VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_EDIT_MOD,            VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_EDIT_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_TOOL_MANPROC,        VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_FILE_AUTORUN,        VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F4,          ID_APP_TERMINATE,       VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 245, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 每日提醒"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,10,20,20
+    LTEXT           "每日提醒  版本 6.0",IDC_STATIC,40,10,80,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003-2005",IDC_STATIC,40,46,104,8
+    DEFPUSHBUTTON   "确定",IDOK,188,7,50,14,WS_GROUP
+    LTEXT           "作者：Acinonyx  2005-11-06",IDC_STATIC,40,28,112,8
+    LTEXT           "Email : acinonyx@vip.sina.com",IDC_TXTMAIL,40,64,117,8
+    LTEXT           "Static",IDC_EDTHELP,7,79,231,123,0,WS_EX_DLGMODALFRAME | 
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_REMIND_FORM DIALOGEX 0, 0, 417, 286
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "关机",IDC_CKSHUT,"Button",BS_AUTOCHECKBOX | BS_FLAT | 
+                    WS_TABSTOP,13,260,28,10,WS_EX_TRANSPARENT
+    CONTROL         "DateTimePicker1",IDC_DTPSHUTDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_SHOWNONE | DTS_LONGDATEFORMAT | 
+                    WS_TABSTOP,43,257,101,15
+    CONTROL         "DateTimePicker2",IDC_DTPSHUTTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,146,257,
+                    58,15
+    PUSHBUTTON      "Shut Down",IDC_BTNSHUTNOW,337,258,68,14
+    GROUPBOX        "",IDC_GROUP,4,244,409,37
+    COMBOBOX        IDC_COBTYPE,206,258,65,66,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COBFORCE,273,258,61,51,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "List1",IDC_PROGLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,27,34,98,117
+    CONTROL         "List2",IDC_MSGLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,153,33,88,124
+    CONTROL         "List3",IDC_PROCLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,265,31,100,128
+    CONTROL         "Tab1",IDC_TABLIST,"SysTabControl32",0x0,11,8,371,210
+END
+
+IDD_DIALOG_PRONEW DIALOG DISCARDABLE  0, 0, 227, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加应用程序提醒"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDTNAME,33,15,155,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTPATH,33,37,137,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTNGETPATH,174,37,14,14
+    CONTROL         "",IDC_CHECKDATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    33,61,9,10
+    CONTROL         "DateTimePicker1",IDC_DTPDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,44,59,
+                    91,15
+    CONTROL         "DateTimePicker2",IDC_DTPTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,137,59,51,
+                    15
+    LISTBOX         IDC_LISTBOX_PRO,193,15,19,59,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,120,88,50,14
+    PUSHBUTTON      "取消",IDCANCEL,170,88,50,14
+    LTEXT           "名称",IDC_STATIC,13,18,17,8
+    LTEXT           "时间",IDC_STATIC,14,62,17,8
+    LTEXT           "路径",IDC_STATIC,13,40,17,8
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,7,5,213,79
+END
+
+IDD_DIALOG_MSGNEW DIALOG DISCARDABLE  0, 0, 229, 139
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加消息提醒"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDTMSG,33,37,157,67,ES_MULTILINE | ES_AUTOVSCROLL
+    CONTROL         "",IDC_CHECKDATE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    33,17,9,10
+    CONTROL         "DateTimePicker1",IDC_DTPDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,45,15,
+                    92,15
+    CONTROL         "DateTimePicker2",IDC_DTPTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,139,15,51,
+                    15
+    LISTBOX         IDC_LISTBOX_MSG,195,15,19,89,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,122,118,50,14
+    PUSHBUTTON      "取消",IDCANCEL,172,118,50,14
+    LTEXT           "时间",IDC_STATIC,14,19,17,8
+    LTEXT           "消息",IDC_STATIC,13,37,17,8
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,7,7,215,105
+END
+
+IDD_DIALOG_PROCESS DIALOG DISCARDABLE  0, 0, 323, 257
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关闭进程"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "DateTimePicker1",IDC_DTPDATE,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_LONGDATEFORMAT | WS_TABSTOP,155,213,
+                    96,15
+    CONTROL         "DateTimePicker2",IDC_DTPTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,253,213,
+                    59,15
+    PUSHBUTTON      "刷新",IDC_REFRESH,167,236,50,14
+    DEFPUSHBUTTON   "确定",IDOK,217,236,50,14
+    PUSHBUTTON      "取消",IDCANCEL,267,236,50,14
+    LTEXT           "结束时间",IDC_STATIC,122,217,33,8
+    LTEXT           "",IDC_COUNT,12,217,97,8
+    CONTROL         "List2",IDC_LISTC_PROC,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,11,11,300,198
+    CONTROL         "Tab2",IDC_TAB2,"SysTabControl32",0x0,7,7,309,226
+END
+
+IDD_DIALOG_MANAGE_PROCESS DIALOG DISCARDABLE  0, 0, 468, 347
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "进程管理"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List3",IDC_PROCESSLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,10,11,448,193
+    PUSHBUTTON      "刷新",IDC_REFRESH,287,325,58,15
+    PUSHBUTTON      "结束进程",IDC_KILLPROC,345,325,58,15
+    PUSHBUTTON      "关闭",IDCANCEL,403,325,58,15
+    LTEXT           "Static",IDC_PROCESSCOUNT,7,329,59,8
+    CONTROL         "Tab4",IDC_TAB1,"SysTabControl32",0x0,7,7,454,200
+    LTEXT           "Static",IDC_THREADCOUNT,74,329,195,8
+    CONTROL         "List1",IDC_LISTTHREAD,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,12,228,446,90
+    CONTROL         "List2",IDC_LISTMODULE,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,11,228,445,90
+    CONTROL         "Tab2",IDC_TAB2,"SysTabControl32",0x0,7,211,454,111
+END
+
+IDD_DIALOG_MAILCHECK DIALOGEX 0, 0, 284, 169
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "邮件检查设置"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "定时检查邮件: 间隔时间:",IDC_CKMAIL,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,19,21,104,10
+    EDITTEXT        IDC_EDTINTERVAL,124,19,74,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,177,19,10,
+                    14
+    CONTROL         "List1",IDC_LISTCON_MAIL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,19,42,177,85
+    PUSHBUTTON      "添加(&A)...",IDC_BTNAPPEND,201,41,64,14
+    PUSHBUTTON      "更改(&C)...",IDC_BTNCHANGE,201,78,64,14
+    PUSHBUTTON      "删除(&D)",IDC_BTNDELETE,201,113,64,14
+    DEFPUSHBUTTON   "确定",IDOK,177,148,50,14
+    PUSHBUTTON      "取消",IDCANCEL,227,148,50,14
+    LTEXT           "分钟",IDC_STATIC,200,21,17,8
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,7,7,270,136,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+END
+
+IDD_DIALOG_MAILCONFIG DIALOG DISCARDABLE  0, 0, 193, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "邮箱设置"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDTMAIL,83,18,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTHOST,83,36,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTUSER,83,52,93,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDTPASS,83,70,93,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,85,102,50,14
+    PUSHBUTTON      "取消",IDCANCEL,136,102,50,14
+    LTEXT           "密码:",IDC_STATIC,18,73,21,8
+    LTEXT           "POP3服务器地址:",IDC_STATIC,18,39,61,8
+    LTEXT           "邮件地址:",IDC_STATIC,18,21,37,8
+    LTEXT           "用户名:",IDC_STATIC,18,55,29,8
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,7,7,179,88
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,0,1
+ PRODUCTVERSION 3,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "Cheetah Group\0"
+            VALUE "FileDescription", "Remind MFC Application\0"
+            VALUE "FileVersion", "3, 0, 0, 1\0"
+            VALUE "InternalName", "Remind\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Remind.EXE\0"
+            VALUE "ProductName", "Remind Application\0"
+            VALUE "ProductVersion", "3, 0, 0, 0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_REMIND_FORM, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 281
+    END
+
+    IDD_DIALOG_PRONEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_DIALOG_MSGNEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_DIALOG_PROCESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 316
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_DIALOG_MANAGE_PROCESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 461
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 340
+    END
+
+    IDD_DIALOG_MAILCHECK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_DIALOG_MAILCONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_REMIND_FORM DLGINIT
+BEGIN
+    IDC_COBTYPE, 0x403, 5, 0
+0xd8b9, 0xfabb, "\000" 
+    IDC_COBTYPE, 0x403, 5, 0
+0xd8d6, 0xf4c6, "\000" 
+    IDC_COBTYPE, 0x403, 5, 0
+0xa2d7, 0xfacf, "\000" 
+    IDC_COBFORCE, 0x403, 5, 0
+0xbfc7, 0xc6d6, "\000" 
+    IDC_COBFORCE, 0x403, 7, 0
+0xc7b7, 0xbfc7, 0xc6d6, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR  DISCARDABLE     "res\\hand.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVEHOVER           WAVE    DISCARDABLE     "res\\stone.wav"
+IDR_WAVEREMINDER        WAVE    DISCARDABLE     "res\\REMINDER.WAV"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Remind\n\nRemind\n\n\nRemind.Document\nRemind Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Remind"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示应用程序信息、版本号及版权\n关于..."
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏！\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏！\n切换状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_TERMINATE        "退出程序！\n退出"
+    ID_EDIT_NEW             "增加新的提醒！\n增加"
+    ID_EDIT_MOD             "修改提醒！\n修改"
+    ID_EDIT_DEL             "删除本条提醒！\n删除"
+    ID_FILE_AUTORUN         "设置程序随系统自动运行！\n自动运行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_OPTION_BEEP          "设置蜂鸣提示！\n蜂鸣提示"
+    ID_OPTION_ONTOP         "设置将程序置于最顶端！\n置于顶端"
+    ID_TOOL_MANPROC         "进程管理！\n进程管理"
+    ID_TOOL_MAILCHECK       "检查指定邮箱中的邮件!\n邮件检查"
+    ID_OPTION_GETPIC        "选择背景图片！\n选择背景"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Remind.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,11 @@
+/* -dConfiguration= ... none provided  */
+-D_UNICODE                     //  24: CharacterSet = "1" 
+-DUNICODE                      //  24: CharacterSet = "" 
+-DWIN32                        //  44: PreprocessorDefinitions = "WIN32;_DEBUG;_CONSOLE" 
+-D_DEBUG                       //  44: PreprocessorDefinitions = "" 
+-D_CONSOLE                     //  44: PreprocessorDefinitions = "" 
+-D_MT                          //  47: RuntimeLibrary = "3" 
+-D_DEBUG                       //  47: RuntimeLibrary = "" 
+-D_DLL                         //  47: RuntimeLibrary = "" 
+.\crashdump.cpp                // 174: RelativePath = ".\crashdump.cpp" 
+.\stdafx.cpp                   // 178: RelativePath = ".\stdafx.cpp" 

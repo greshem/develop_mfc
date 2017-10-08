@@ -1,0 +1,35 @@
+
+#2011_09_28   星期三   add by greshem
+1. 这里的平台是2005  2003 也应该没有什么问题. 
+
+
+10a11
+> 	<cxxflags>/D_AFXDLL</cxxflags>  #注意 去掉 /D_AFXDLL , 因为 install_commLib.pl 编译的时候 就没有用 这个宏.
+15c16
+< 	<cxxflags>/MTd</cxxflags>		#MTd 因为 install_commLib.pl 用的也是 /MTd 不能用  /MD /MDd 等. 
+---
+> 	<cxxflags>/MDd</cxxflags>
+24,30c25
+< 	<ldflags>/verbose:lib</ldflags>	#/verbose:lib 便于调试.
+< 	<!-- <ldflags>/NODEFAULTLIB:nafxcwd.lib</ldflags> --> #
+< 	<!-- <ldflags>/NODEFAULTLIB:LIBCMTD.lib</ldflags> -->
+< 	<!--
+< 	<ldflags>/NODEFAULTLIB:msvcrtd.lib</ldflags> #这是cpp库，确实可以省略掉.
+< 	-->
+< 
+---
+> 	<ldflags>/NODEFAULTLIB:LIBCMTD.lib</ldflags>
+34,35d28
+< 	<sys-lib>nafxcwd</sys-lib> 	#注意两者的顺序 这个lib 是 mfc 程序编译出来的obj 文件 一般 用到mfc 的静态库的时候 这个放到最前面 比较保险.
+< 	<sys-lib>libcmtd</sys-lib>	#
+37,40d29
+< 	<!--
+< 	<sys-lib>msvcrtd</sys-lib> 
+< 	-->
+< 
+42d30
+< 	<!-- <sys-lib>atlsd</sys-lib> --> #这个无所谓, 在2003 和 2005 上, 2010 上好像有所谓.
+58,59d45
+< 	<sys-lib>commlib</sys-lib> 	#commlib 的默认带的库 一定要加上.
+< 	<!-- <sys-lib>mfc80d</sys-lib>  --> #这个无所谓.
+

@@ -1,0 +1,3 @@
+cl.exe /nologo /MDd /W4 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/"  /Fo"Debug/" /Fd"Debug/" /FD /GZ   *.cpp
+rc.exe /l 0x804 /fo"DebuggetFilePath.res" /d "NDEBUG" /d "_AFXDLL" 
+link.exe  /nologo /incremental:no /debug /machine:I386  /SUBSYSTEM:windows  /nologo /subsystem:windows /incremental:yes  /debug /machine:I386 /out:"Debug/mfc_test.exe" /pdbtype:sept  Debug/*.obj Debug/*.res version.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib msvcrt.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib 

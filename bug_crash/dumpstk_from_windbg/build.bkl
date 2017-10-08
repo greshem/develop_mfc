@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<!-- $Id: bakefile_quickstart.txt,v 1.5 2006/02/11 18:41:11 KO Exp $ -->
+<makefile>
+	<exe id="dumpstk"> 
+	<app-type>console</app-type>
+	<cxxflags>/DWINDOWSCODE</cxxflags>
+	<!-- <include>D:\usr\include\lmyunit</include> -->
+	<include>D:\usr\include\</include>
+	<include>C:\Program Files\Debugging Tools for Windows (x86)\sdk\inc</include>
+	<lib-path> C:\Program Files\Debugging Tools for Windows (x86)\sdk\lib\i386</lib-path>
+	<lib-path>D:\usr\lib</lib-path>
+	<!-- <sys-lib>UnitCode</sys-lib> --> 
+	<cxxflags>/D_AFXDLL</cxxflags> 
+	<cxxflags>/D_MBCS</cxxflags>
+	<cxxflags>/MDd</cxxflags>
+	<cxxflags>/ZI</cxxflags>
+	<threading>multi</threading>
+	<ldflags>/INCREMENTAL:NO</ldflags>
+	<ldflags>/NOLOGO</ldflags>
+	<ldflags>/NODEFAULTLIB:LIBCMTD.lib</ldflags>
+	<ldflags>/DEBUG</ldflags>
+	<ldflags>/MACHINE:X86</ldflags>
+
+	
+
+	<cxxflags>/DWIN32</cxxflags>
+	<cxxflags>/D_DEBUG</cxxflags>			
+	<cxxflags>/D_WINDOWS</cxxflags>
+	<cxxflags>/DNOPCH</cxxflags>   
+	<sys-lib>winmm</sys-lib>
+	<sys-lib>comctl32</sys-lib>
+	<sys-lib>rpcrt4</sys-lib>
+	<sys-lib>wsock32</sys-lib>
+	<sys-lib>odbc32</sys-lib>
+	<sys-lib>kernel32</sys-lib>
+	<sys-lib>user32</sys-lib>
+	<sys-lib>gdi32</sys-lib>
+	<sys-lib>winspool</sys-lib>
+	<sys-lib>comdlg32</sys-lib>
+	<sys-lib>advapi32</sys-lib>
+	<sys-lib>shell32</sys-lib>
+	<sys-lib>ole32</sys-lib>
+	<sys-lib>oleaut32</sys-lib>
+	<sys-lib>uuid</sys-lib>
+
+	<sys-lib>dbgeng</sys-lib>
+	<sys-lib>dbghelp</sys-lib>
+	<sys-lib>engextcpp</sys-lib>
+	
+	<sys-lib>odbccp32</sys-lib>
+
+
+	<sources>$(fileList('*.cpp'))</sources> 
+     </exe>
+</makefile>
+
+

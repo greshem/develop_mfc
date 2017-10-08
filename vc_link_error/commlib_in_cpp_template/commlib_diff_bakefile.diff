@@ -1,0 +1,33 @@
+10a11
+> 	<cxxflags>/D_AFXDLL</cxxflags> 
+15c16
+< 	<cxxflags>/MTd</cxxflags>
+---
+> 	<cxxflags>/MDd</cxxflags>
+24,30c25
+< 	<ldflags>/verbose:lib</ldflags>
+< 	<!-- <ldflags>/NODEFAULTLIB:nafxcwd.lib</ldflags> -->
+< 	<!-- <ldflags>/NODEFAULTLIB:LIBCMTD.lib</ldflags> -->
+< 	<!--
+< 	<ldflags>/NODEFAULTLIB:msvcrtd.lib</ldflags>
+< 	-->
+< 
+---
+> 	<ldflags>/NODEFAULTLIB:LIBCMTD.lib</ldflags>
+32c27
+< 	<ldflags>/SUBSYSTEM:windows</ldflags>
+---
+> 	<ldflags>/SUBSYSTEM:WINDOWS</ldflags>
+34,35d28
+< 	<sys-lib>nafxcwd</sys-lib>
+< 	<sys-lib>libcmtd</sys-lib>
+37,40d29
+< 	<!--
+< 	<sys-lib>msvcrtd</sys-lib> 
+< 	-->
+< 
+42d30
+< 	<!-- <sys-lib>atlsd</sys-lib> -->
+58,59d45
+< 	<sys-lib>commlib</sys-lib> 
+< 	<!-- <sys-lib>mfc80d</sys-lib>  -->

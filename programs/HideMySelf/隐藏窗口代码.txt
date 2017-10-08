@@ -1,0 +1,10 @@
+
+#2011_08_24   ÐÇÆÚÈý   add by greshem
+    //Òþ²Ø´°¿Ú
+	ModifyStyleEx(WS_EX_APPWINDOW,WS_EX_TOOLWINDOW);
+	WINDOWPLACEMENT wp;
+	wp.length = sizeof(WINDOWPLACEMENT);
+	wp.flags = WPF_RESTORETOMAXIMIZED;
+	wp.showCmd = SW_HIDE;
+	SetWindowPlacement(&wp);
+
